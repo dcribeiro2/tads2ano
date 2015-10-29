@@ -22,6 +22,8 @@ public class TelaCadastroCliente extends JFrame {
 	private JTextField textField_2;
 	private JLabel lblEndereo;
 	private JTextField textField_3;
+	private JLabel lblEmail;
+	private JTextField textField_4;
 
 	/**
 	 * Launch the application.
@@ -50,9 +52,9 @@ public class TelaCadastroCliente extends JFrame {
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[]{0, 0, 0, 0, 0};
-		gbl_contentPane.rowHeights = new int[]{0, 0, 0, 0, 0, 0};
+		gbl_contentPane.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0};
 		gbl_contentPane.columnWeights = new double[]{0.0, 0.0, 1.0, 1.0, Double.MIN_VALUE};
-		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		contentPane.setLayout(gbl_contentPane);
 		
 		JLabel lblId = new JLabel("Id");
@@ -109,19 +111,36 @@ public class TelaCadastroCliente extends JFrame {
 		lblEndereo = new JLabel("Endere\u00E7o");
 		GridBagConstraints gbc_lblEndereo = new GridBagConstraints();
 		gbc_lblEndereo.anchor = GridBagConstraints.EAST;
-		gbc_lblEndereo.insets = new Insets(0, 0, 0, 5);
+		gbc_lblEndereo.insets = new Insets(0, 0, 5, 5);
 		gbc_lblEndereo.gridx = 1;
 		gbc_lblEndereo.gridy = 4;
 		contentPane.add(lblEndereo, gbc_lblEndereo);
 		
 		textField_3 = new JTextField();
 		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
-		gbc_textField_3.insets = new Insets(0, 0, 0, 5);
+		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_3.gridx = 2;
 		gbc_textField_3.gridy = 4;
 		contentPane.add(textField_3, gbc_textField_3);
 		textField_3.setColumns(10);
+		
+		lblEmail = new JLabel("Email");
+		GridBagConstraints gbc_lblEmail = new GridBagConstraints();
+		gbc_lblEmail.anchor = GridBagConstraints.EAST;
+		gbc_lblEmail.insets = new Insets(0, 0, 0, 5);
+		gbc_lblEmail.gridx = 1;
+		gbc_lblEmail.gridy = 5;
+		contentPane.add(lblEmail, gbc_lblEmail);
+		
+		textField_4 = new JTextField();
+		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
+		gbc_textField_4.insets = new Insets(0, 0, 0, 5);
+		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_4.gridx = 2;
+		gbc_textField_4.gridy = 5;
+		contentPane.add(textField_4, gbc_textField_4);
+		textField_4.setColumns(10);
 	}
 
 }
