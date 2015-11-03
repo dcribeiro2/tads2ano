@@ -1,6 +1,13 @@
 package br.univel.trabalho_Atacadao;
 
+/**
+ * 
+ * @author dcribeiro2
+ *
+ */
 public class CadastroClientes {
+	
+	
 	
 	private int id;
 	private String nome;

@@ -1,7 +1,8 @@
 package br.univel.trabalho_Atacadao;
 
 public enum CadastroDeProdutosCategoria {
+	Sessao;
 	
-	Sessão;
+	private String Limpeza, Alimentacao;
 
 }
