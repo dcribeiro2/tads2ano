@@ -11,6 +11,9 @@ import javax.swing.JLabel;
 import java.awt.GridBagConstraints;
 import javax.swing.JTextField;
 import java.awt.Insets;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaCadastroCliente extends JFrame {
 
@@ -24,6 +27,7 @@ public class TelaCadastroCliente extends JFrame {
 	private JTextField textField_3;
 	private JLabel lblEmail;
 	private JTextField textField_4;
+	private JButton btnSalvar;
 
 	/**
 	 * Launch the application.
@@ -52,9 +56,9 @@ public class TelaCadastroCliente extends JFrame {
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[]{0, 0, 0, 0, 0};
-		gbl_contentPane.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0};
+		gbl_contentPane.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
 		gbl_contentPane.columnWeights = new double[]{0.0, 0.0, 1.0, 1.0, Double.MIN_VALUE};
-		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		contentPane.setLayout(gbl_contentPane);
 		
 		JLabel lblId = new JLabel("Id");
@@ -128,19 +132,36 @@ public class TelaCadastroCliente extends JFrame {
 		lblEmail = new JLabel("Email");
 		GridBagConstraints gbc_lblEmail = new GridBagConstraints();
 		gbc_lblEmail.anchor = GridBagConstraints.EAST;
-		gbc_lblEmail.insets = new Insets(0, 0, 0, 5);
+		gbc_lblEmail.insets = new Insets(0, 0, 5, 5);
 		gbc_lblEmail.gridx = 1;
 		gbc_lblEmail.gridy = 5;
 		contentPane.add(lblEmail, gbc_lblEmail);
 		
 		textField_4 = new JTextField();
 		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-		gbc_textField_4.insets = new Insets(0, 0, 0, 5);
+		gbc_textField_4.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_4.gridx = 2;
 		gbc_textField_4.gridy = 5;
 		contentPane.add(textField_4, gbc_textField_4);
 		textField_4.setColumns(10);
+		
+		btnSalvar = new JButton("Salvar");
+		btnSalvar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				salvar();
+			}
+		});
+		GridBagConstraints gbc_btnSalvar = new GridBagConstraints();
+		gbc_btnSalvar.gridx = 3;
+		gbc_btnSalvar.gridy = 6;
+		contentPane.add(btnSalvar, gbc_btnSalvar);
+	}
+
+	protected void salvar() {
+
+		
+		
 	}
 
 }
