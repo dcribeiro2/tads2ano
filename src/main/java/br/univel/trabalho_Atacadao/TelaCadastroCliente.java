@@ -14,7 +14,7 @@ import java.awt.Insets;
 
 public class TelaCadastroCliente extends JFrame {
 
-	private JPanel contentPane;
+	private JPanel contentPane;  
 	private JTextField textField;
 	private JLabel lblNome;
 	private JTextField textField_1;
